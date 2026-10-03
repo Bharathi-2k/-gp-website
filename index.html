@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GP Anikalan | Premium Jewellery</title>
+    <meta name="description" content="Discover elegant premium covering and bridal jewellery from GP Anikalan. All products come with a 2-year warranty. Explore our collections and connect with us through WhatsApp and Instagram.">
+    <meta property="og:title" content="GP Anikalan | Premium Jewellery">
+    <meta property="og:description" content="Discover exquisite jewellery designed to celebrate your most beautiful moments.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="#" class="logo">GP Anikalan</a>
+            <nav class="nav-menu" id="navMenu">
+                <button class="nav-close mobile-only" id="menuClose"><i class="fas fa-times"></i></button>
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#collections" class="nav-link">Collections</a></li>
+                    <li><a href="#featured" class="nav-link">Premium Covering</a></li>
+                    <li><a href="#featured" class="nav-link">Traditional Covering</a></li>
+                    <li><a href="#bridal" class="nav-link">Bridal</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-social-mobile">
+                    <a href="#" class="social-icon instagram-link"><i class="fab fa-instagram"></i></a>
+                    <button class="social-icon whatsapp-btn"><i class="fab fa-whatsapp"></i></button>
+                </div>
+            </nav>
+            <div class="header-actions hide-mobile">
+                <a href="#" class="social-icon instagram-link"><i class="fab fa-instagram"></i></a>
+                <button class="social-icon whatsapp-btn"><i class="fab fa-whatsapp"></i></button>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <img src="assets/images/hero.jpg" alt="Hero Background" class="hero-bg" loading="eager">
+            <div class="hero-content reveal-up">
+                <h1>Timeless Elegance, Crafted for You</h1>
+                <p>Discover exquisite jewellery designed to celebrate your most beautiful moments.</p>
+                <div class="hero-buttons">
+                    <a href="#collections" class="btn btn-primary">Explore Collection</a>
+                    <button class="btn btn-secondary whatsapp-btn">Order on WhatsApp</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="collections section-padding" id="collections">
+            <div class="section-title reveal-up">
+                <h2>Shop By Collection</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="category-grid" id="categoryContainer">
+            </div>
+        </section>
+
+        <section class="featured section-padding bg-light" id="featured">
+            <div class="section-title reveal-up">
+                <h2>Featured Collection</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="filter-controls reveal-up">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search for jewellery..." aria-label="Search items">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter-buttons" id="filterContainer">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="Premium">Premium</button>
+                    <button class="filter-btn" data-filter="Traditional">Traditional</button>
+                    <button class="filter-btn" data-filter="Bridal">Bridal</button>
+                    <button class="filter-btn" data-filter="Necklaces">Necklaces</button>
+                    <button class="filter-btn" data-filter="Earrings">Earrings</button>
+                    <button class="filter-btn" data-filter="Rings">Rings</button>
+                    <button class="filter-btn" data-filter="Bangles">Bangles</button>
+                </div>
+            </div>
+
+            <div class="product-grid" id="productContainer">
+            </div>
+            <div id="noResults" class="no-results hidden">
+                <h3>No jewellery found. Please try another search.</h3>
+            </div>
+        </section>
+
+        <section class="bridal-banner" id="bridal">
+            <img src="assets/images/bridal.jpg" alt="Bridal Banner" class="bridal-bg" loading="lazy">
+            <div class="bridal-overlay"></div>
+            <div class="bridal-content reveal-up">
+                <h2>Made for Your Most Beautiful Moments</h2>
+                <p>Discover timeless bridal jewellery crafted to complement your special day.</p>
+                <button class="btn btn-primary btn-light" id="exploreBridalBtn">Explore Bridal Collection</button>
+            </div>
+        </section>
+
+        <section class="about section-padding" id="about">
+            <div class="about-container reveal-up">
+                <div class="about-image">
+                    <img src="assets/images/necklace.jpg" alt="GP Anikalan Jewellery" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <h2>The Story Behind GP Anikalan</h2>
+                    <div class="divider-left"></div>
+                    <p>At GP Anikalan, we focus on elegant jewellery, quality craftsmanship and customer satisfaction. We believe every piece of jewellery tells a meaningful story of tradition, devotion, and style.</p>
+                    <p>With an emphasis on uncompromised quality, exceptional customer service, and exquisite elegant designs combining traditional and modern collections, we bring you jewelry that marks life's most precious occasions.</p>
+                    <br>
+                    <a href="#collections" class="btn btn-outline">Discover Our Collection</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose section-padding">
+            <div class="section-title reveal-up">
+                <h2>Why Choose GP Anikalan</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal-up">
+                    <i class="fas fa-gem"></i>
+                    <h3>Premium Quality</h3>
+                    <p>Carefully selected jewellery and quality craftsmanship.</p>
+                </div>
+                <div class="feature-card reveal-up" style="transition-delay: 100ms">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Elegant Designs</h3>
+                    <p>Traditional and contemporary jewellery designs.</p>
+                </div>
+                <div class="feature-card reveal-up" style="transition-delay: 200ms">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Trusted Service</h3>
+                    <p>A customer-focused jewellery experience.</p>
+                </div>
+                <div class="feature-card reveal-up" style="transition-delay: 300ms">
+                    <i class="fas fa-comments"></i>
+                    <h3>Personal Assistance</h3>
+                    <p>Connect directly with us through WhatsApp and Instagram.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="instagram-section section-padding bg-light">
+            <div class="section-title reveal-up">
+                <h2>Follow GP Anikalan</h2>
+                <p>Explore our latest jewellery designs and updates on Instagram.</p>
+                <div class="divider"></div>
+            </div>
+            <div class="insta-gallery" id="instaGallery">
+                <img src="assets/images/gold.jpg" alt="Instagram 1" loading="lazy">
+                <img src="assets/images/diamond.jpg" alt="Instagram 2" loading="lazy">
+                <img src="assets/images/rings_1791024827962.png" alt="Instagram 3" loading="lazy">
+                <img src="assets/images/bridal.jpg" alt="Instagram 4" loading="lazy">
+                <img src="assets/images/earrings.jpg" alt="Instagram 5" loading="lazy">
+                <img src="assets/images/bangles.jpg" alt="Instagram 6" loading="lazy">
+            </div>
+            <div class="center-btn reveal-up">
+                <a href="#" class="btn btn-primary instagram-link">Follow Us on Instagram</a>
+            </div>
+        </section>
+
+        <section class="contact section-padding" id="contact">
+            <div class="contact-card reveal-up">
+                <h2>Let's Find Something Beautiful for You</h2>
+                <div class="divider"></div>
+                <h3>GP Anikalan</h3>
+                <p>Contact us through WhatsApp or Instagram for enquiries.</p>
+                <div class="contact-actions">
+                    <button class="btn btn-primary whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp Us</button>
+                    <a href="#" class="btn btn-outline instagram-link"><i class="fab fa-instagram"></i> Follow on Instagram</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="#" class="footer-logo">GP Anikalan</a>
+                <p class="footer-tagline">Timeless jewellery for timeless moments.</p>
+                <div class="footer-socials">
+                    <button class="social-icon whatsapp-btn"><i class="fab fa-whatsapp"></i></button>
+                    <a href="#" class="social-icon instagram-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#bridal">Bridal</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Collections</h3>
+                <ul>
+                    <li><a href="#featured">Premium</a></li>
+                    <li><a href="#featured">Traditional</a></li>
+                    <li><a href="#bridal">Bridal</a></li>
+                    <li><a href="#featured">Necklaces</a></li>
+                    <li><a href="#featured">Earrings</a></li>
+                    <li><a href="#featured">Rings</a></li>
+                    <li><a href="#featured">Bangles</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GP Anikalan. All Rights Reserved.</p>
+            <button id="scrollToTop" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+        </div>
+    </footer>
+
+    <button class="floating-whatsapp whatsapp-btn" aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </button>
+
+    <div class="modal" id="productModal" aria-modal="true" role="dialog">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content reveal-modal">
+            <button class="modal-close" id="modalClose" aria-label="Close details">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <div class="modal-img-container">
+                    <img id="modalImg" src="" alt="Product" loading="lazy">
+                </div>
+                <div class="modal-info">
+                    <span class="modal-category" id="modalCategory"></span>
+                    <h2 id="modalTitle"></h2>
+                    <p class="modal-desc" id="modalDesc"></p>
+                    <div class="modal-meta">
+                        <span class="product-code" id="modalCode"></span>
+                    </div>
+                    <div class="modal-price">Price on Request</div>
+                    <button class="btn btn-primary modal-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
